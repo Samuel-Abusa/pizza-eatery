@@ -82,9 +82,14 @@ button a:hover{
   background: red;
   border: red;
 }
-.chef{}
-.chefCont{
-  width: 50%;
+.chefCont{background: tomato;
+  width: 70%;
   margin: auto;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.c_Chef{
+  flex-basis: 40%;
 }
