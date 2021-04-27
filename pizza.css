@@ -82,7 +82,11 @@ button a:hover{
   background: red;
   border: red;
 }
+.chef{
+  height: 60vh;
+}
 .chefCont{background: tomato;
+  height: 80%;
   width: 70%;
   margin: auto;
   display: flex;
@@ -90,6 +94,19 @@ button a:hover{
   justify-content: center;
   align-items: center;
 }
-.c_Chef{
+.c_Chef{background: black;
+  padding-top: 70px;
+  height: 100%;
   flex-basis: 40%;
+}
+.c_Chef h2{
+  font-size: 250%;
+  font-weight: bold;
+}
+.c_Chef span{
+  color: red;
+}
+.c_Chef h4{
+  color: rgb(199, 198, 198);
+  margin: 35px 0;
 }
