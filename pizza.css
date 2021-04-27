@@ -125,3 +125,11 @@ button a:hover{
   position: relative;
   top:  30%;
 }
+#ordr{
+  position: relative;
+  height: 70vh;
+  background: url(images/pizzBackground.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
