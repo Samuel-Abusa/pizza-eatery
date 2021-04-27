@@ -5,6 +5,10 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
 .headr{
   position: relative;
   height: 100vh;
@@ -77,4 +81,10 @@ button a:hover{
 .headrTxt button:hover{
   background: red;
   border: red;
+}
+.chef{}
+.chefCont{
+  width: 50%;
+  margin: auto;
+  display: flex;
 }
