@@ -134,9 +134,38 @@ button a:hover{
   background-repeat: no-repeat;
   color: white;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.pizzCont{
+  width: 70%;
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .pizz{
-  flex-basis: 20%;
+
+  flex-basis: 30%;
+}
+.pizz button{
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  font-weight: bold;
+  border: solid 2px red;
+  padding: 1.9%;
+}
+footer{
+  position: relative;
+  background: url(images/foods-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+.overlay2{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 0, 0, 0.6);
 }
