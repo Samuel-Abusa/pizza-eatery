@@ -23,41 +23,38 @@ $ (".form1").submit(function (event){
   event.preventDefault();
 
   var priceOfPizz1 = 10;
-  var noOfPizz1 = $ ("#amnt1").val();
+  var noOfPizz1 = parseInt($ ("#amnt1").val());
 
-  function addCrust(a){
-    return +a;
-  }
-  
-
-
-
-
-
-
-  /*function addCrust(a){
-    return (priceOfPizz1 * noOfPizz1) + (a * noOfPizz1);
-  };*/
-  
-
-
-
-
-
-
-
-  /*var crusty = function (){
-    if ($ ("#crust1").val() == "Crispy"){
-      alert(addCrust(2));
+  var Crust = function (){
+    if ($("#crust1").val() == "Crispy"){
+      return (priceOfPizz1 * noOfPizz1) + (2 * noOfPizz1);
     }else{
-      if($ ("#crust1").val() == "Stuffed"){
-        alert(addCrust(3));
+      if ($("#crust1").val() == "Stuffed"){
+        return (priceOfPizz1 * noOfPizz1) + (3 * noOfPizz1);
       }else{
-        alert(addCrust(4));
+        return (priceOfPizz1 * noOfPizz1) + (4 * noOfPizz1);
       }
     }
   }
-  function addT(){
-    + 
-  }*/
+
+  var tOtaL = function (){
+    if ($ ("#tpngs1").val() == "Mushrooms"){
+      return Crust() + (2.5 * noOfPizz1);
+    }else{
+      if ($ ("#tpngs1").val() == "Sausage"){
+        return Crust() + (2.99 * noOfPizz1);
+      }else{
+        if ($ ("#tpngs1").val() == "Bacon"){
+          return Crust() + (3 * noOfPizz1);
+        }else{
+          if ($ ("#tpngs1").val() == "Black olives"){
+            return Crust() + (3.05 * noOfPizz1);
+          }else{
+            return Crust() + (3.2 * noOfPizz1);
+          }
+        }
+      }
+    }
+  }
 });
+

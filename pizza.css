@@ -184,6 +184,10 @@ button a:hover{
   flex-direction: column;
   text-align: center;
 }
+.cr{
+  display: none;
+  color: green;
+}
 .sub{
   background: red;
   color: white;
