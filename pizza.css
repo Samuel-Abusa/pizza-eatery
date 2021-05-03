@@ -201,6 +201,26 @@ footer{
   background-repeat: no-repeat;
   background-size: cover;
   height: 40vh;
+  color: white;
+}
+.fter{
+  padding: 80px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.fter1{
+  flex-basis: 40%;
+}
+.fter2{
+  flex-basis: 40%;
+}
+table{
+  width: 100%;
+}
+table span{
+  color: black;
 }
 .overlay2{
   position: absolute;
