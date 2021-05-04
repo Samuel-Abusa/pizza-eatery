@@ -228,3 +228,33 @@ table span{
   width: 100%;
   background: url(images/foods-background.png);
 }
+.chkout{
+  display: none;
+  background: rgba(175, 170, 170, .2);
+  color: white;
+  border: solid 1px red;
+  font-weight: bold;
+}
+
+.receipt{
+  position: relative;
+  background: rgb(230, 224, 224);
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  font-size: 150%;
+}
+.receipt ul{
+  list-style-type: none;
+}
+.receipt input{
+  width: 70%;
+  background: red;
+  color: white;
+  border: solid 1px red;
+  font-weight: bold;
+}
