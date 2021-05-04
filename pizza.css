@@ -258,3 +258,43 @@ table span{
   border: solid 1px red;
   font-weight: bold;
 }
+@media (max-width: 1325px) {
+  .bi{
+    display: none;
+  }
+  .navBar ul{
+    display: none;
+  }
+  .chef{
+    height: 150vh;
+  }
+  .chefCont{
+    flex-direction: column;
+  }
+  .burger{
+    display: none;
+  }
+  footer{
+    height: 100vh;
+    display: flex;
+  }
+  .fter{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    height: 80%;
+  }
+  #ordr{
+    height: 130vh;
+    
+  }
+  .pizzCont{
+    flex-direction: column;
+  }
+  .pizzCont img{
+    max-width: 40%;
+  }
+  .pizz{
+    margin-top: 2.5%;
+  }
+}
