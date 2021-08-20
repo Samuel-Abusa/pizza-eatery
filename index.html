@@ -1,305 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="pizza.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="container-fluid">
-    <div class="headr">
-      <div class="overlay"></div>
-      <nav>
-        <div class="navBar">
-          <img src="images/logo (1).png" alt="logo">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Food Menu</li>
-            <li>Blog</li>
-            <li>Pages</li>
-            <li>Reservation</li>
-            <li>Contact</li>
-          </ul>
-          <!--Search icon-->
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg>
-          <!--Cart Icon-->
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-          </svg>
-        </div>
-      </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="pizza.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="headr">
+        <div class="overlay"></div>
+        <nav>
+          <div class="navBar">
+            <img src="images/logo (1).png" alt="logo" class="logo" />
 
-      <div class="headrTxt">
-        <h1 class="txt">DELICIOUS PIZZA</h1>
-        <P class="txt">
-          Dorem Ipsum is simply dummy of the printing and typesetting 's standard dummy when.
-        </P>
-        <a href="#ordr"><button>ORDER NOW</button></a>
-      </div>
-    </div>
+            <i class="bi bi-list"></i>
+            <i class="bi bi-x"></i>
 
-    <div class="chef">
-     <div class="chefCont">
-      <img src="images/chef.png" alt="Chef">
-      <div class="c_Chef">
-        <h2>Red <span>Chili</span></h2>
-        <h2>For Getting Real Taste</h2>
-        <h4>DISCOVER OUR FOOD</h4>
-        <p>
-          Morbi ut sapien scelerisque, fermentum ex ultrices, bibendum lacus. Aliquam id consequat  ex. Integer luctus tellus at rutrum maximus. Quisque lacinia blandit quam rhoncus vulputate   vulputate fermentum.
-        </p>
-        <button>READ MORE <span>&#62;</span></button>
-      </div>
-     </div>
-     <img src="images/burger.png" alt="burger" class="burger">
-    </div>
+            <div class="navigate">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Food Menu</a>
+              <a href="#">Blog</a>
+              <a href="#">Pages</a>
+              <a href="#">Reservation</a>
+              <a href="#">Contact</a>
+            </div>
+            <!--Search icon-->
+            <i class="bi bi-search"></i>
+            <!--Cart Icon-->
+            <i class="bi bi-cart-check"></i>
+          </div>
+        </nav>
 
-    <div id="ordr">
-      <div class="overlay"></div>
-      <h2 style="position: relative; margin-bottom: 20px; font-weight: bold;">GET TO ORDER YOUR PIZZA</h2>
-      <h4 style="position: relative; color: red;">LET’S DISCOVER FOOD</h4>
-      <div class="pizzCont">
-        <div class="pizz piz1" style="position: relative;">
-          <img src="images/pizza-small.jpeg" alt="small pizza">
-          <h3>SMALL</h3>
-          <p>
-            A slice of Pizza for you serene beauty stant plantations.
+        <div class="headrTxt">
+          <h1 class="txt">DELICIOUS PIZZA</h1>
+          <p class="txt">
+            Dorem Ipsum is simply dummy of the printing and typesetting 's
+            standard dummy when.
           </p>
-          <button class="place1">PLACE YOUR ORDER</button>
+          <a href="#ordr"><button>ORDER NOW</button></a>
         </div>
-
-        <div class="prices price1" style="position: relative;">
-          <h2>SMALL PIZZA</h2>
-          <h4>$ 10</h4>
-          <form class="form1">
-            <label for="amnt1">How many pizzas would you like?</label>
-            <br>
-            <input type="number" id="amnt1">
-            <br>
-            <label for="crust1">What crust would you like?</label>
-            <br>
-            <select name="crust1" id="crust1">
-              <option value="Crispy">Crispy +$2</option>
-              <option value="Stuffed">Stuffed +$3</option>
-              <option value="Glutten-free">Glutten-free +$4</option>
-            </select>
-            <br>
-            <label for="tpngs1">Here's a list of our favourite topings to choose from :</label>
-            <br>
-            <select name="tpngs1" id="tpngs1">
-              <option value="Mushrooms">Mushrooms +$2.50</option>
-              <option value="Sausage">Sausage +$2.99</option>
-              <option value="Bacon">Bacon  +$3</option>
-              <option value="Black olives">Black olives +$3.05</option>
-              <option value="Green peppers">Green peppers +$3.2</option>
-            </select>
-            <br>
-            <br>
-            <p>Would you like your pizza delvered</p>
-            <label for="yes">
-              <input type="radio" name="optn1" id="yes" value="Yes" class="rdio">
-              Yes
-            </label>
-            <label for="no">
-              <input type="radio" name="optn1" id="no" value="No" class="rdio">
-              No
-            </label>
-            <br>
-            <input type="submit" value="PLACE ORDER" class="sub sub1">
-            <input type="button" value="Proceed to checkout" class="chkout chkout1">
-          </form>
-        </div>
-
-        <div class="receipt receipt1">
-          <ul>
-            <li>Pizza : <span id="pz1"></span> </li>
-            <li>Crust : <span id="cr1"></span></li>
-            <li>Topings : <span id="tp1"></span></li>
-          </ul>
-          <h5>Your total order is</h5>
-          <p id="ttlOdr1"></p>
-          <input type="button" value="Confirm" id="con1">
-        </div>
-  
-        <div class="pizz piz2" style="position: relative;">
-          <img src="images/pizza-medium.jpeg" alt="medium Pizza">
-          <h3>MEDIUM</h3>
-          <p>
-            A slice of Pizza for you serene beauty stant plantations.
-          </p>
-          <button class="place2">PLACE YOUR ORDER</button>
-        </div>
-
-        <div class="prices price2" style="position: relative;">
-          <h2>Medim PIZZA</h2>
-          <h4>$ 15</h4>
-          <form class="form2">
-            <label for="amnt2">How many pizzas would you like?</label>
-            <br>
-            <input type="number" id="amnt2">
-            <br>
-            <label for="crust2">What crust would you like?</label>
-            <br>
-            <select name="crust2" id="crust2">
-              <option value="Crispy">crispy +$2.5</option>
-              <option value="Stuffed">Stuffed +$3.5</option>
-              <option value="Glutten-free">Glutten-free +$4.5</option>
-            </select>
-            <br>
-            <label for="tpngs2">Here's a list of our favourite topings to choose from :</label>
-            <br>
-            <select name="tpngs2" id="tpngs2">
-              <option value="Mushrooms">Mushrooms +$3</option>
-              <option value="Sausage">Sausage +$3.49</option>
-              <option value="Bacon">Bacon +$3.5</option>
-              <option value="Black olives">Black olives +$3.55</option>
-              <option value="Green peppers">Green peppers +$3.7</option>
-            </select>
-            <br>
-            <p>Would you like your pizza delvered</p>
-            <label for="yes">
-              <input type="radio" name="optn2" id="yes" value="Yes" class="rdio">
-              Yes
-            </label>
-            <label for="no">
-              <input type="radio" name="optn2" id="no" value="No" class="rdio">
-              No
-            </label>
-            <br>
-            <input type="submit" value="PLACE ORDER" class="sub sub2">
-            <input type="button" value="Proceed to checkout" class="chkout chkout2">
-          </form>
-        </div>
-
-        <div class="receipt receipt2">
-          <ul>
-            <li>Pizza : <span id="pz2"></span> </li>
-            <li>Crust : <span id="cr2"></span></li>
-            <li>Topings : <span id="tp2"></span></li>
-          </ul>
-          <h5>Your total order is</h5>
-          <p id="ttlOdr2"></p>
-          <input type="button" value="Confirm" id="con2">
-        </div>
-  
-        <div class="pizz piz3" style="position: relative;">
-          <img src="images/pizza-large.jpeg" alt="Large Pizza">
-          <h3>LARGE</h3>
-          <p>
-            A slice of Pizza for you serene beauty stant plantations.
-          </p>
-          <button class="place3">PLACE YOUR ORDER</button>
-        </div>
-
-        <div class="prices price3" style="position: relative;">
-          <h2>LARGE PIZZA</h2>
-          <h4>$ 20</h4>
-          <form class="form3">
-            <label for="amnt3">How many pizzas would you like?</label>
-            <br>
-            <input type="number" id="amnt3">
-            <br>
-            <label for="crust3">What crust would you like?</label>
-            <br>
-            <select name="crust3" id="crust3">
-              <option value="Crispy">crispy +$3</option>
-              <option value="Stuffed">Stuffed +$4</option>
-              <option value="Glutten-free">Glutten-free +$5</option>
-            </select>
-            <br>
-            <label for="tpngs3">Here's a list of our favourite topings to choose from :</label>
-            <br>
-            <select name="tpngs3" id="tpngs3">
-              <option value="Mushrooms">Mushrooms +$3.5</option>
-              <option value="Sausage">Sausage +$3.99</option>
-              <option value="Bacon">Bacon +$4</option>
-              <option value="Black olives">Black olives +$4.05</option>
-              <option value="Green peppers">Green peppers +$4.2</option>
-            </select>
-            <br>
-            <p>Would you like your pizza delvered</p>
-            <label for="yes">
-              <input type="radio" name="optn3" id="yes" value="Yes" class="rdio">
-              Yes
-            </label>
-            <label for="no">
-              <input type="radio" name="optn3" id="no" value="No" class="rdio">
-              No
-            </label>
-            <br>
-            <input type="submit" value="PLACE ORDER" class="sub sub3">
-            <input type="button" value="Proceed to checkout" class="chkout chkout3">
-          </form>
-        </div>
-
-        <div class="receipt receipt3">
-          <ul>
-            <li>Pizza : <span id="pz3"></span> </li>
-            <li>Crust : <span id="cr3"></span></li>
-            <li>Topings : <span id="tp3"></span></li>
-          </ul>
-          <h5>Your total order is</h5>
-          <p id="ttlOdr3"></p>
-          <input type="button" value="Confirm" id="con3">
-        </div>
-  
       </div>
+
+      <div class="chef">
+        <div class="chefCont">
+          <img src="images/chef.png" alt="Chef" />
+          <div class="c_Chef">
+            <h2>Red <span>Chili</span></h2>
+            <h2>For Getting Real Taste</h2>
+            <h4>DISCOVER OUR FOOD</h4>
+            <p>
+              Morbi ut sapien scelerisque, fermentum ex ultrices, bibendum
+              lacus. Aliquam id consequat ex. Integer luctus tellus at rutrum
+              maximus. Quisque lacinia blandit quam rhoncus vulputate vulputate
+              fermentum.
+            </p>
+            <button>READ MORE <span>&#62;</span></button>
+          </div>
+        </div>
+        <img src="images/burger.png" alt="burger" class="burger" />
+      </div>
+
+      <div id="ordr">
+        <div class="overlay"></div>
+        <h2 style="position: relative; margin-bottom: 20px; font-weight: bold">
+          GET TO ORDER YOUR PIZZA
+        </h2>
+        <h4 style="position: relative; color: red">LET’S DISCOVER FOOD</h4>
+        <div class="pizzCont">
+          <div class="pizzz">
+            <div class="pizz piz1" style="position: relative">
+              <img src="images/pizza-small.jpeg" alt="small pizza" />
+              <h3>SMALL</h3>
+              <p>A slice of Pizza for you serene beauty stant plantations.</p>
+              <button class="place1">PLACE YOUR ORDER</button>
+            </div>
+
+            <div class="prices price1" style="position: relative">
+              <h2>SMALL PIZZA</h2>
+              <h4>$ 10</h4>
+              <form class="form1">
+                <label for="amnt1">How many pizzas would you like?</label>
+                <br />
+                <input type="number" id="amnt1" />
+                <br />
+                <label for="crust1">What crust would you like?</label>
+                <br />
+                <select name="crust1" id="crust1">
+                  <option value="Crispy">Crispy +$2</option>
+                  <option value="Stuffed">Stuffed +$3</option>
+                  <option value="Glutten-free">Glutten-free +$4</option>
+                </select>
+                <br />
+                <label for="tpngs1"
+                  >Here's a list of our favourite topings to choose from
+                  :</label
+                >
+                <br />
+                <select name="tpngs1" id="tpngs1">
+                  <option value="Mushrooms">Mushrooms +$2.50</option>
+                  <option value="Sausage">Sausage +$2.99</option>
+                  <option value="Bacon">Bacon +$3</option>
+                  <option value="Black olives">Black olives +$3.05</option>
+                  <option value="Green peppers">Green peppers +$3.2</option>
+                </select>
+                <br />
+                <br />
+                <p>Would you like your pizza delvered</p>
+                <label for="yes">
+                  <input
+                    type="radio"
+                    name="optn1"
+                    id="yes"
+                    value="Yes"
+                    class="rdio"
+                  />
+                  Yes
+                </label>
+                <label for="no">
+                  <input
+                    type="radio"
+                    name="optn1"
+                    id="no"
+                    value="No"
+                    class="rdio"
+                  />
+                  No
+                </label>
+                <br />
+                <input type="submit" value="PLACE ORDER" class="sub sub1" />
+                <input
+                  type="button"
+                  value="Proceed to checkout"
+                  class="chkout chkout1"
+                />
+              </form>
+            </div>
+
+            <div class="receipt receipt1">
+              <ul>
+                <li>Pizza : <span id="pz1"></span></li>
+                <li>Crust : <span id="cr1"></span></li>
+                <li>Topings : <span id="tp1"></span></li>
+              </ul>
+              <h5>Your total order is</h5>
+              <p id="ttlOdr1"></p>
+              <input type="button" value="Confirm" id="con1" />
+            </div>
+          </div>
+
+          <div class="pizzz">
+            <div class="pizz piz2" style="position: relative">
+              <img src="images/pizza-medium.jpeg" alt="medium Pizza" />
+              <h3>MEDIUM</h3>
+              <p>A slice of Pizza for you serene beauty stant plantations.</p>
+              <button class="place2">PLACE YOUR ORDER</button>
+            </div>
+
+            <div class="prices price2" style="position: relative">
+              <h2>Medim PIZZA</h2>
+              <h4>$ 15</h4>
+              <form class="form2">
+                <label for="amnt2">How many pizzas would you like?</label>
+                <br />
+                <input type="number" id="amnt2" />
+                <br />
+                <label for="crust2">What crust would you like?</label>
+                <br />
+                <select name="crust2" id="crust2">
+                  <option value="Crispy">crispy +$2.5</option>
+                  <option value="Stuffed">Stuffed +$3.5</option>
+                  <option value="Glutten-free">Glutten-free +$4.5</option>
+                </select>
+                <br />
+                <label for="tpngs2"
+                  >Here's a list of our favourite topings to choose from
+                  :</label
+                >
+                <br />
+                <select name="tpngs2" id="tpngs2">
+                  <option value="Mushrooms">Mushrooms +$3</option>
+                  <option value="Sausage">Sausage +$3.49</option>
+                  <option value="Bacon">Bacon +$3.5</option>
+                  <option value="Black olives">Black olives +$3.55</option>
+                  <option value="Green peppers">Green peppers +$3.7</option>
+                </select>
+                <br />
+                <p>Would you like your pizza delvered</p>
+                <label for="yes">
+                  <input
+                    type="radio"
+                    name="optn2"
+                    id="yes"
+                    value="Yes"
+                    class="rdio"
+                  />
+                  Yes
+                </label>
+                <label for="no">
+                  <input
+                    type="radio"
+                    name="optn2"
+                    id="no"
+                    value="No"
+                    class="rdio"
+                  />
+                  No
+                </label>
+                <br />
+                <input type="submit" value="PLACE ORDER" class="sub sub2" />
+                <input
+                  type="button"
+                  value="Proceed to checkout"
+                  class="chkout chkout2"
+                />
+              </form>
+            </div>
+
+            <div class="receipt receipt2">
+              <ul>
+                <li>Pizza : <span id="pz2"></span></li>
+                <li>Crust : <span id="cr2"></span></li>
+                <li>Topings : <span id="tp2"></span></li>
+              </ul>
+              <h5>Your total order is</h5>
+              <p id="ttlOdr2"></p>
+              <input type="button" value="Confirm" id="con2" />
+            </div>
+          </div>
+
+          <div class="pizzz">
+            <div class="pizz piz3" style="position: relative">
+              <img src="images/pizza-large.jpeg" alt="Large Pizza" />
+              <h3>LARGE</h3>
+              <p>A slice of Pizza for you serene beauty stant plantations.</p>
+              <button class="place3">PLACE YOUR ORDER</button>
+            </div>
+
+            <div class="prices price3" style="position: relative">
+              <h2>LARGE PIZZA</h2>
+              <h4>$ 20</h4>
+              <form class="form3">
+                <label for="amnt3">How many pizzas would you like?</label>
+                <br />
+                <input type="number" id="amnt3" />
+                <br />
+                <label for="crust3">What crust would you like?</label>
+                <br />
+                <select name="crust3" id="crust3">
+                  <option value="Crispy">crispy +$3</option>
+                  <option value="Stuffed">Stuffed +$4</option>
+                  <option value="Glutten-free">Glutten-free +$5</option>
+                </select>
+                <br />
+                <label for="tpngs3"
+                  >Here's a list of our favourite topings to choose from
+                  :</label
+                >
+                <br />
+                <select name="tpngs3" id="tpngs3">
+                  <option value="Mushrooms">Mushrooms +$3.5</option>
+                  <option value="Sausage">Sausage +$3.99</option>
+                  <option value="Bacon">Bacon +$4</option>
+                  <option value="Black olives">Black olives +$4.05</option>
+                  <option value="Green peppers">Green peppers +$4.2</option>
+                </select>
+                <br />
+                <p>Would you like your pizza delvered</p>
+                <label for="yes">
+                  <input
+                    type="radio"
+                    name="optn3"
+                    id="yes"
+                    value="Yes"
+                    class="rdio"
+                  />
+                  Yes
+                </label>
+                <label for="no">
+                  <input
+                    type="radio"
+                    name="optn3"
+                    id="no"
+                    value="No"
+                    class="rdio"
+                  />
+                  No
+                </label>
+                <br />
+                <input type="submit" value="PLACE ORDER" class="sub sub3" />
+                <input
+                  type="button"
+                  value="Proceed to checkout"
+                  class="chkout chkout3"
+                />
+              </form>
+            </div>
+
+            <div class="receipt receipt3">
+              <ul>
+                <li>Pizza : <span id="pz3"></span></li>
+                <li>Crust : <span id="cr3"></span></li>
+                <li>Topings : <span id="tp3"></span></li>
+              </ul>
+              <h5>Your total order is</h5>
+              <p id="ttlOdr3"></p>
+              <input type="button" value="Confirm" id="con3" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="overlay2"></div>
+        <div style="position: relative" class="fter">
+          <div class="fter1">
+            <h2>ABOUT CAFE</h2>
+            <p>
+              We aim to home-produce as much as possiblefor the best quality,
+              and to reduce food mcious cakes, traditional Devon soups, sauces
+              and accompanimentsion.We aim to home-produce as much as
+              possiblefor the best quality, and to reduce food mcious cakes.
+            </p>
+          </div>
+          <div class="fter2">
+            <h2>OPENING HOURS</h2>
+            <table>
+              <tr>
+                <td>Monday</td>
+                <td>5pm - 11pm</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>5pm - 11pm</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td><span>Closed</span></td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>11pm - Midnight</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>4:30 - Midnight</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>5pm - 11pm</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>5pm - 11pm</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </footer>
     </div>
-
-    <footer>
-      <div class="overlay2"></div>
-      <div style="position: relative;" class="fter">
-        <div class="fter1">
-          <h2>ABOUT CAFE</h2>
-        <p>
-          We aim to home-produce as much as possiblefor the best quality, and to reduce food mcious cakes, traditional Devon soups, sauces and accompanimentsion.We aim to home-produce as much as possiblefor the best quality, and to reduce food mcious cakes.
-        </p>
-        </div>
-        <div class="fter2">
-          <h2>OPENING HOURS</h2>
-          <table>
-            <tr>
-              <td>Monday</td>
-              <td>5pm - 11pm</td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td>5pm - 11pm</td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td><span>Closed</span></td>
-            </tr>
-            <tr>
-              <td>Thursday</td>
-              <td>11pm - Midnight</td>
-            </tr>
-            <tr>
-              <td>Friday</td>
-              <td>4:30 - Midnight</td>
-            </tr>
-            <tr>
-              <td>Saturday</td>
-              <td>5pm - 11pm</td>
-            </tr>
-            <tr>
-              <td>Sunday</td>
-              <td>5pm - 11pm</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="pizza.js"></script>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="pizza.js"></script>
 </html>

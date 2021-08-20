@@ -1,16 +1,20 @@
-*{
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
-img{
+.container-fluid {
+  width: 100%;
+}
+img {
   max-width: 100%;
   height: auto;
 }
-.headr{
+.headr {
   position: relative;
   height: 100vh;
   background: url(images/pizzBackground2.jpeg);
@@ -19,77 +23,97 @@ img{
   background-position: center;
   color: white;
 }
-.overlay{
+.overlay {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, 0.6);
 }
-nav{
+nav {
   width: 100%;
-  height: 7%;
+  height: 10%;
   position: relative;
 }
-.navBar{
+.navBar {
   height: 100%;
-  width: 65%;
+  width: 75%;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-.navBar ul{
-  list-style-type: none;
-  flex-basis: 50%;
+.logo {
+  width: 180px;
+}
+.navigate {
+  flex-basis: 65%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.headrTxt{
+.navigate a {
+  text-decoration: none;
+  color: white;
+}
+.navigate_sm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.navigate_sm a {
+  text-decoration: none;
+  color: white;
+}
+.bi-list,
+.bi-x {
+  display: none;
+}
+
+.headrTxt {
   height: 93%;
   text-align: center;
 }
-.txt{
+.txt {
   position: relative;
   top: 40%;
 }
-.headrTxt h1{
+.headrTxt h1 {
   font-weight: bold;
-  font-size: 400%;
 }
-.headrTxt p{
-  font-size: 130%;
+.headrTxt p {
+  font-size: 110%;
 }
-.headrTxt button{
+.headrTxt button {
   position: relative;
   top: 42%;
   background: rgba(0, 0, 0, 0);
   color: white;
   border: solid 1px white;
-  padding: .6% 2%;
+  padding: 0.6% 2%;
   font-weight: bold;
   font-size: 110%;
   transition: linear 1s;
 }
-button a{
+button a {
   text-decoration: none;
   color: white;
 }
-button a:hover{
+button a:hover {
   color: white;
 }
-.headrTxt button:hover{
+.headrTxt button:hover {
   background: red;
   border: red;
 }
-.chef{
+.chef {
   height: 60vh;
   display: flex;
   align-items: center;
 }
-.chefCont{
-  height: 80%;
+.chefCont {
+  height: 90%;
   width: 70%;
   margin: auto;
   display: flex;
@@ -97,38 +121,46 @@ button a:hover{
   justify-content: center;
   align-items: center;
 }
-.c_Chef{
-  padding-top: 70px;
-  height: 100%;
+.chefCont img {
+  height: 95%;
+}
+.c_Chef {
+  margin-top: 60px;
+  height: 70%;
   flex-basis: 40%;
   margin-left: 35px;
 }
-.c_Chef h2{
-  font-size: 250%;
+.c_Chef h2 {
+  font-size: 190%;
   font-weight: bold;
 }
-.c_Chef span{
+.c_Chef span {
   color: red;
 }
-.c_Chef h4{
+.c_Chef h4 {
   color: rgb(199, 198, 198);
   margin: 35px 0;
+  font-size: 120%;
 }
-.c_Chef button{
+.c_Chef p {
+  font-size: 90%;
+}
+.c_Chef button {
   background: rgba(0, 0, 0, 0);
   border: solid 2px red;
   color: red;
   font-weight: bold;
-  padding: 1% 3.5%;
-  margin-top: 65px;
+  padding: 0.5% 2.5%;
+  margin-top: 15px;
 }
-.burger{
+.burger {
   position: relative;
-  top:  30%;
+  top: 30%;
+  height: 35%;
 }
-#ordr{
+#ordr {
   position: relative;
-  height: 70vh;
+  height: auto;
   background: url(images/pizzBackground.jpeg);
   background-size: cover;
   background-position: center;
@@ -138,22 +170,26 @@ button a:hover{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
-.pizzCont{
+.pizzCont {
   flex-basis: 70%;
   width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.pizz{
+.pizzz {
   flex-basis: 30%;
+}
+.pizz {
   text-align: center;
 }
-.pizz h3{
+.pizz h3 {
   margin-top: 20px;
 }
-.pizz button{
+.pizz button {
   background: rgba(0, 0, 0, 0);
   color: white;
   font-weight: bold;
@@ -161,82 +197,80 @@ button a:hover{
   padding: 1.9%;
   transition: 1s;
 }
-.pizz button:hover{
+.pizz button:hover {
   background: red;
 }
-.prices{
-  background: rgba(0, 0, 0, .7);
+.prices {
+  background: rgba(0, 0, 0, 0.7);
   color: white;
-  flex-basis: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  height: auto;
+  padding: 30px;
 }
-.prices h2{
+.prices h2 {
   font-weight: bold;
 }
-.prices h4{
+.prices h4 {
   color: red;
 }
-.prices form{
+.prices form {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.cr{
+.cr {
   display: none;
   color: green;
 }
-.sub{
+.sub {
   background: red;
   color: white;
   border: solid 1px red;
   font-weight: bold;
 }
-footer{
+footer {
   position: relative;
   background: rgba(255, 0, 0, 0.7);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40vh;
+  height: auto;
   color: white;
 }
-.fter{
+.fter {
   padding: 80px;
   width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
-.fter1{
+.fter1 {
   flex-basis: 40%;
 }
-.fter2{
+.fter2 {
   flex-basis: 40%;
 }
-table{
+table {
   width: 100%;
 }
-table span{
+table span {
   color: black;
 }
-.overlay2{
+.overlay2 {
   position: absolute;
   height: 100%;
   width: 100%;
   background: url(images/foods-background.png);
 }
-.chkout{
+.chkout {
   display: none;
-  background: rgba(175, 170, 170, .2);
+  background: rgba(175, 170, 170, 0.2);
   color: white;
   border: solid 1px red;
   font-weight: bold;
 }
 
-.receipt{
+.receipt {
   position: relative;
   background: rgb(230, 224, 224);
   flex-basis: 30%;
@@ -248,53 +282,94 @@ table span{
   color: black;
   font-size: 150%;
 }
-.receipt ul{
+.receipt ul {
   list-style-type: none;
 }
-.receipt input{
+.receipt input {
   width: 70%;
   background: red;
   color: white;
   border: solid 1px red;
   font-weight: bold;
 }
-@media (max-width: 1325px) {
-  .bi{
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
+  .navigate {
     display: none;
   }
-  .navBar ul{
+
+  .bi-list {
+    display: block;
+    font-size: 30px;
+  }
+  .bi-x {
+    font-size: 30px;
+  }
+
+  /* ---------------- */
+
+  .bi-cart-check,
+  .bi-search {
     display: none;
   }
-  .chef{
-    height: 150vh;
+
+  .chef {
+    height: 100vh;
   }
-  .chefCont{
+  .c_Chef {
+    margin-top: -100px;
+  }
+  .chefCont {
     flex-direction: column;
   }
-  .burger{
+
+  .burger,
+  .chefCont img {
     display: none;
   }
-  footer{
+  footer {
     height: 100vh;
     display: flex;
   }
-  .fter{
+  .fter {
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
     height: 80%;
   }
-  #ordr{
-    height: 130vh;
-    
+  #ordr {
+    height: 100vh;
+    padding: 0;
+    flex-direction: row;
+    text-align: center;
+    display: block;
+    height: auto;
   }
-  .pizzCont{
-    flex-direction: column;
+  .pizzCont {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    height: 100%;
   }
-  .pizzCont img{
+  .pizzCont img {
     max-width: 40%;
   }
-  .pizz{
-    margin-top: 2.5%;
+  .pizzz {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .prices form {
+    height: 9%;
+  }
+
+  .prices {
+    padding: 10px;
+    height: fit-content;
   }
 }
